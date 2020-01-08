@@ -13,8 +13,10 @@ class Search(metaclass=ABCMeta):
         self.array = array
 
     @abstractmethod
-    def search(self, desired: int) -> bool:
-        """Search desired: int in self.array. Return True if found, False otherwise"""
+    def search(self, desired: int) -> int or str:
+        """
+        Search desired: int in self.array. Return index: int of found element, 'Not found' otherwise
+        """
 
 
 class Sort(metaclass=ABCMeta):
